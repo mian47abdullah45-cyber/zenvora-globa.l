@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071b3b">
+<title>NOVORA WORLD | One World. Unlimited Opportunities.</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#071426;color:#fff}
+header{background:#0b2143;padding:17px 6%;display:flex;
+justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:23px;font-weight:900;color:#38a5ff}
+nav a{color:#dceaff;text-decoration:none;margin:0 10px;font-size:14px}
+button{background:#1685f9;color:white;border:0;padding:12px 19px;
+border-radius:9px;font-weight:bold;cursor:pointer}
+button:hover{background:#0065d5}
+.hero{text-align:center;padding:85px 20px 65px;
+background:radial-gradient(ellipse at top,#104d91,#071426 70%)}
+.hero h1{font-size:clamp(38px,7vw,70px);margin-bottom:18px}
+.hero h1 span{color:#39a9ff}
+.hero p{color:#c3d9f5;max-width:650px;margin:auto;line-height:1.8}
+.hero button{margin-top:25px;font-size:16px}
+.section{padding:55px 7%}
+.section h2{text-align:center;font-size:30px;margin-bottom:12px}
+.sub{text-align:center;color:#a8c4e5;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#10294b;border:1px solid #234c79;border-radius:15px;
+padding:24px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#269bff}
+.card .emoji{font-size:35px}
+.card h3{margin:14px 0 10px;color:#62b9ff}
+.card p{color:#b6cce5;line-height:1.6;font-size:14px}
+.community{background:#0b1d36}
+.panel{max-width:700px;margin:auto;background:#10294b;
+padding:25px;border-radius:15px;border:1px solid #28527e}
+input,textarea{width:100%;padding:14px;margin:10px 0;
+background:#071a32;border:1px solid #31577e;border-radius:8px;
+color:white;font-size:15px}
+textarea{min-height:100px;resize:vertical}
+.post{background:#0a203c;border-radius:10px;padding:17px;margin-top:15px}
+.post small{color:#5bb6ff}
+footer{text-align:center;padding:30px;color:#8eafd3;background:#061020}
+.menu{display:none}
+@media(max-width:650px){
+header{flex-wrap:wrap;gap:15px}
+nav{width:100%;display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+nav a{margin:4px}
+.hero{padding:65px 18px}
+.section{padding:42px 5%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">🌐 NOVORA WORLD</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#ideas">Ideas</a>
+<a href="#skills">Skills</a>
+<a href="#opportunities">Opportunities</a>
+<a href="#community">Community</a>
+</nav>
+<button onclick="showJoin()">Join Now</button>
+</header>
+
+<section class="hero" id="home">
+<h1>One World.<br><span>Unlimited Opportunities.</span></h1>
+<p>Discover new ideas, share your skills, connect with people
+around the world and build a better future together.</p>
+<button onclick="document.getElementById('community').scrollIntoView({behavior:'smooth'})">
+Explore Community →
+</button>
+</section>
+
+<section class="section" id="ideas">
+<h2>💡 Idea Exchange</h2>
+<p class="sub">Share your creativity with the entire world.</p>
+<div class="grid">
+<div class="card"><div class="emoji">🚀</div>
+<h3>Share Ideas</h3><p>Publish your innovative ideas and inspire people worldwide.</p></div>
+<div class="card"><div class="emoji">🌍</div>
+<h3>Global Thinking</h3><p>Discover different perspectives and creative solutions.</p></div>
+<div class="card"><div class="emoji">🤝</div>
+<h3>Collaborate</h3><p>Find people who want to build something amazing together.</p></div>
+</div>
+</section>
+
+<section class="section community" id="skills">
+<h2>🎯 Skill Connect</h2>
+<p class="sub">Your talent can open doors around the world.</p>
+<div class="grid">
+<div class="card"><div class="emoji">💻</div><h3>Technology</h3>
+<p>Programming, AI, web development and digital skills.</p></div>
+<div class="card"><div class="emoji">🎨</div><h3>Creative Skills</h3>
+<p>Graphic design, video editing and content creation.</p></div>
+<div class="card"><div class="emoji">📚</div><h3>Learning</h3>
+<p>Teach others and discover new knowledge.</p></div>
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<h2>🌟 Opportunities</h2>
+<p class="sub">Find your next big opportunity.</p>
+<div class="grid">
+<div class="card"><div class="emoji">💼</div>
+<h3>Projects</h3><p>Discover projects and work with talented people.</p></div>
+<div class="card"><div class="emoji">🏆</div>
+<h3>Challenges</h3><p>Take part in creative worldwide challenges.</p></div>
+<div class="card"><div class="emoji">💰</div>
+<h3>Business</h3><p>Explore business partnerships and earning opportunities.</p></div>
+</div>
+</section>
+
+<section class="section community" id="community">
+<h2>🌐 Global Community</h2>
+<p class="sub">Start sharing your ideas with the community.</p>
+<div class="panel">
+<h3>Create a Community Post</h3>
+<input id="username" placeholder="Your name">
+<textarea id="postText" placeholder="Share your idea with the world..."></textarea>
+<button onclick="publishPost()">Publish Post</button>
+<div id="posts">
+<div class="post"><small>NOVORA WORLD</small>
+<p>Welcome to a world of ideas, skills and opportunities! 🌍</p></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="panel" style="text-align:center">
+<h2>Be Part of NOVORA WORLD</h2>
+<p class="sub">Connect. Create. Discover. Grow.</p>
+<button onclick="showJoin()">Join Our Community</button>
+</div>
+</section>
+
+<footer>
+<h3>NOVORA WORLD 🌐</h3>
+<p>One World. Unlimited Opportunities.</p>
+<p>© 2026 NOVORA WORLD. All rights reserved.</p>
+</footer>
+
+<script>
+function showJoin(){
+alert("Welcome to NOVORA WORLD! User registration is coming soon.");
+}
+function publishPost(){
+const name=document.getElementById("username").value.trim();
+const message=document.getElementById("postText").value.trim();
+if(!name||!message){
+alert("Please enter your name and idea.");
+return;
+}
+const post=document.createElement("div");
+post.className="post";
+const title=document.createElement("small");
+title.textContent=name;
+const content=document.createElement("p");
+content.textContent=message;
+post.append(title,content);
+document.getElementById("posts").prepend(post);
+document.getElementById("postText").value="";
+}
+</script>
+</body>
+</html>
