@@ -3,52 +3,77 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#071b3b">
-<title>NOVORA WORLD | One World. Unlimited Opportunities.</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100b35">
+<title>NOVORA WORLD - Global AI Community</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#071426;color:#fff}
-header{background:#0b2143;padding:17px 6%;display:flex;
-justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
-.logo{font-size:23px;font-weight:900;color:#38a5ff}
-nav a{color:#dceaff;text-decoration:none;margin:0 10px;font-size:14px}
-button{background:#1685f9;color:white;border:0;padding:12px 19px;
-border-radius:9px;font-weight:bold;cursor:pointer}
-button:hover{background:#0065d5}
-.hero{text-align:center;padding:85px 20px 65px;
-background:radial-gradient(ellipse at top,#104d91,#071426 70%)}
-.hero h1{font-size:clamp(38px,7vw,70px);margin-bottom:18px}
-.hero h1 span{color:#39a9ff}
-.hero p{color:#c3d9f5;max-width:650px;margin:auto;line-height:1.8}
-.hero button{margin-top:25px;font-size:16px}
-.section{padding:55px 7%}
-.section h2{text-align:center;font-size:30px;margin-bottom:12px}
-.sub{text-align:center;color:#a8c4e5;margin-bottom:32px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:#10294b;border:1px solid #234c79;border-radius:15px;
-padding:24px;transition:.2s}
-.card:hover{transform:translateY(-4px);border-color:#269bff}
-.card .emoji{font-size:35px}
-.card h3{margin:14px 0 10px;color:#62b9ff}
-.card p{color:#b6cce5;line-height:1.6;font-size:14px}
-.community{background:#0b1d36}
-.panel{max-width:700px;margin:auto;background:#10294b;
-padding:25px;border-radius:15px;border:1px solid #28527e}
-input,textarea{width:100%;padding:14px;margin:10px 0;
-background:#071a32;border:1px solid #31577e;border-radius:8px;
-color:white;font-size:15px}
-textarea{min-height:100px;resize:vertical}
-.post{background:#0a203c;border-radius:10px;padding:17px;margin-top:15px}
-.post small{color:#5bb6ff}
-footer{text-align:center;padding:30px;color:#8eafd3;background:#061020}
-.menu{display:none}
-@media(max-width:650px){
-header{flex-wrap:wrap;gap:15px}
-nav{width:100%;display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
-nav a{margin:4px}
-.hero{padding:65px 18px}
-.section{padding:42px 5%}
+body{font-family:Arial,sans-serif;background:#100d30;color:#fff}
+header{padding:20px 6%;display:flex;justify-content:space-between;
+align-items:center;flex-wrap:wrap;gap:15px;background:#171044}
+.logo{font-size:25px;font-weight:900;color:#bda5ff}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none}
+button{background:linear-gradient(120deg,#6845ef,#b04dff);
+color:white;border:0;padding:13px 22px;border-radius:12px;
+font-weight:bold;cursor:pointer}
+.hero{text-align:center;padding:55px 15px 30px;
+background:radial-gradient(ellipse,#392080,#100d30 70%)}
+.hero h1{font-size:clamp(36px,6vw,65px)}
+.hero h1 span{color:#bd91ff}
+.hero p{color:#d8caff;line-height:1.8;margin:15px auto;max-width:650px}
+.dashboard{max-width:1100px;margin:30px auto;padding:20px;
+display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:20px;align-items:center}
+.panel{background:#241958;border:1px solid #795bd0;
+border-radius:20px;padding:22px;box-shadow:0 0 25px #713aff22}
+.panel h3{color:#d1b6ff;margin-bottom:12px}
+.panel p{color:#d4c8ef;line-height:1.6;font-size:14px}
+.ai{text-align:center;margin-bottom:20px}
+.ai .symbol{font-size:55px}
+.ai h2{color:#d9baff;margin:10px}
+.actions{display:flex;justify-content:center;gap:17px;margin-top:20px}
+.actions span{font-size:12px;display:block;margin-top:8px}
+.globe-area{text-align:center;min-width:0}
+.globe{width:min(65vw,330px);height:min(65vw,330px);
+max-width:330px;max-height:330px;border-radius:50%;margin:auto;
+display:flex;align-items:center;justify-content:center;
+font-size:clamp(100px,20vw,190px);
+background:radial-gradient(circle at 35% 30%,#fff,#d6a5ff 15%,
+#8c45ef 45%,#36106f 75%,#120b36);
+box-shadow:0 0 35px #b65dff,0 0 90px #863cff88,
+inset -20px -15px 35px #160638;
+animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px);box-shadow:0 0 55px #c27aff,0 0 100px #863cff}}
+.globe-caption{margin:22px auto;color:#e4d7ff}
+.profiles{display:grid;gap:15px}
+.profile{display:flex;align-items:center;gap:12px}
+.avatar{width:43px;height:43px;border-radius:50%;
+background:linear-gradient(135deg,#b987ff,#6739c8);
+display:grid;place-items:center;font-size:23px}
+.profile small{color:#c3aaff}
+.phone{background:#171044;border:2px solid #8868d9;
+border-radius:25px;padding:18px;margin:20px auto;max-width:270px}
+.phone h3{color:#d4b6ff;margin:12px 0}
+.phone-card{background:#34206c;padding:15px;border-radius:12px;margin:12px 0}
+.phone-card p{font-size:13px;color:#e5d9ff}
+.growth{text-align:center;max-width:600px;margin:30px auto}
+.stat{font-size:40px;font-weight:bold;color:#c49cff;margin:15px}
+.chart{height:100px;display:flex;align-items:end;justify-content:space-around;
+border-bottom:1px solid #9b7bff}
+.chart i{width:12%;border-radius:8px 8px 0 0;
+background:linear-gradient(#d4a0ff,#6739dc)}
+.section{padding:50px 7%;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+gap:18px;margin-top:25px}
+footer{text-align:center;background:#090721;padding:30px;color:#c7b6ee}
+input,textarea{width:100%;padding:13px;margin:9px 0;
+background:#140e37;color:white;border:1px solid #8060c8;border-radius:10px}
+@media(max-width:750px){
+header{justify-content:center}
+nav{justify-content:center}
+.dashboard{grid-template-columns:1fr;max-width:480px}
+.globe{width:250px;height:250px}
+.panel{margin:5px}
 }
 </style>
 </head>
@@ -58,112 +83,119 @@ nav a{margin:4px}
 <div class="logo">🌐 NOVORA WORLD</div>
 <nav>
 <a href="#home">Home</a>
-<a href="#ideas">Ideas</a>
-<a href="#skills">Skills</a>
-<a href="#opportunities">Opportunities</a>
+<a href="#ai">AI</a>
 <a href="#community">Community</a>
+<a href="#skills">Skills</a>
 </nav>
-<button onclick="showJoin()">Join Now</button>
+<button onclick="document.getElementById('community').scrollIntoView()">Join Now</button>
 </header>
 
 <section class="hero" id="home">
-<h1>One World.<br><span>Unlimited Opportunities.</span></h1>
-<p>Discover new ideas, share your skills, connect with people
-around the world and build a better future together.</p>
-<button onclick="document.getElementById('community').scrollIntoView({behavior:'smooth'})">
-Explore Community →
-</button>
+<h1>One World. <span>One Future.</span></h1>
+<p>Connect with people, discover opportunities,
+share ideas and explore a smarter global community.</p>
 </section>
 
-<section class="section" id="ideas">
-<h2>💡 Idea Exchange</h2>
-<p class="sub">Share your creativity with the entire world.</p>
-<div class="grid">
-<div class="card"><div class="emoji">🚀</div>
-<h3>Share Ideas</h3><p>Publish your innovative ideas and inspire people worldwide.</p></div>
-<div class="card"><div class="emoji">🌍</div>
-<h3>Global Thinking</h3><p>Discover different perspectives and creative solutions.</p></div>
-<div class="card"><div class="emoji">🤝</div>
-<h3>Collaborate</h3><p>Find people who want to build something amazing together.</p></div>
+<main class="dashboard">
+
+<div>
+<div class="panel ai" id="ai">
+<div class="symbol">🐬</div>
+<h2>AI Interaction</h2>
+<p>Smart • Adaptive • Personal</p>
+<div class="actions">
+<div>✧<span>Recommend</span></div>
+<div>▣<span>Analyze</span></div>
+<div>⬡<span>Create</span></div>
 </div>
-</section>
-
-<section class="section community" id="skills">
-<h2>🎯 Skill Connect</h2>
-<p class="sub">Your talent can open doors around the world.</p>
-<div class="grid">
-<div class="card"><div class="emoji">💻</div><h3>Technology</h3>
-<p>Programming, AI, web development and digital skills.</p></div>
-<div class="card"><div class="emoji">🎨</div><h3>Creative Skills</h3>
-<p>Graphic design, video editing and content creation.</p></div>
-<div class="card"><div class="emoji">📚</div><h3>Learning</h3>
-<p>Teach others and discover new knowledge.</p></div>
 </div>
-</section>
-
-<section class="section" id="opportunities">
-<h2>🌟 Opportunities</h2>
-<p class="sub">Find your next big opportunity.</p>
-<div class="grid">
-<div class="card"><div class="emoji">💼</div>
-<h3>Projects</h3><p>Discover projects and work with talented people.</p></div>
-<div class="card"><div class="emoji">🏆</div>
-<h3>Challenges</h3><p>Take part in creative worldwide challenges.</p></div>
-<div class="card"><div class="emoji">💰</div>
-<h3>Business</h3><p>Explore business partnerships and earning opportunities.</p></div>
+<div class="phone">
+<h3>Good morning! 👋</h3>
+<p>Ready to explore your world?</p>
+<div class="phone-card">
+<h3>Today's Focus</h3>
+<p>Share your ideas and discover new opportunities.</p>
 </div>
-</section>
+<h3>Quick Actions</h3>
+<p>🌍 Explore &nbsp; 👥 Connect</p>
+<p>➕ Create &nbsp; ✨ Discover</p>
+</div>
+</div>
 
-<section class="section community" id="community">
-<h2>🌐 Global Community</h2>
-<p class="sub">Start sharing your ideas with the community.</p>
+<div class="globe-area">
+<div class="globe">🌍</div>
+<h2 class="globe-caption">Connecting the World</h2>
+<p>Share • Engage • Inspire</p>
+</div>
+
+<div>
 <div class="panel">
-<h3>Create a Community Post</h3>
-<input id="username" placeholder="Your name">
-<textarea id="postText" placeholder="Share your idea with the world..."></textarea>
-<button onclick="publishPost()">Publish Post</button>
-<div id="posts">
-<div class="post"><small>NOVORA WORLD</small>
-<p>Welcome to a world of ideas, skills and opportunities! 🌍</p></div>
+<h3>🌐 Community Network</h3>
+<p>Share • Engage • Inspire</p>
+<div class="profiles" style="margin-top:20px">
+<div class="profile"><div class="avatar">👩🏻</div><div>New York<br><small>Community</small></div></div>
+<div class="profile"><div class="avatar">👨🏻</div><div>London<br><small>Community</small></div></div>
+<div class="profile"><div class="avatar">👩🏽</div><div>Dubai<br><small>Community</small></div></div>
+<div class="profile"><div class="avatar">👨🏽</div><div>Sydney<br><small>Community</small></div></div>
 </div>
+</div>
+<div class="panel growth">
+<h3>Platform Growth</h3>
+<p>Users Worldwide</p>
+<div class="stat">🌍 Global</div>
+<div class="chart">
+<i style="height:25%"></i><i style="height:40%"></i>
+<i style="height:32%"></i><i style="height:60%"></i>
+<i style="height:75%"></i><i style="height:90%"></i>
+</div>
+</div>
+</div>
+
+</main>
+
+<section class="section" id="community">
+<h1>🌎 Global Community</h1>
+<p style="color:#cbb9ed;margin:15px">Your ideas can inspire the world.</p>
+<div class="panel" style="max-width:600px;margin:25px auto">
+<h3>Create Your Post</h3>
+<input id="username" placeholder="Your name">
+<textarea id="message" placeholder="Share your idea..."></textarea>
+<button onclick="postIdea()">Publish Idea</button>
+<div id="posts"></div>
 </div>
 </section>
 
-<section class="section">
-<div class="panel" style="text-align:center">
-<h2>Be Part of NOVORA WORLD</h2>
-<p class="sub">Connect. Create. Discover. Grow.</p>
-<button onclick="showJoin()">Join Our Community</button>
+<section class="section" id="skills">
+<h1>Discover Your Potential</h1>
+<div class="grid">
+<div class="panel"><h3>💻 Technology</h3><p>AI and programming skills.</p></div>
+<div class="panel"><h3>🎨 Creativity</h3><p>Design and content creation.</p></div>
+<div class="panel"><h3>💼 Opportunities</h3><p>Discover projects and partnerships.</p></div>
 </div>
 </section>
 
 <footer>
-<h3>NOVORA WORLD 🌐</h3>
+<h2>💜 NOVORA WORLD</h2>
 <p>One World. Unlimited Opportunities.</p>
-<p>© 2026 NOVORA WORLD. All rights reserved.</p>
+<p>© 2026 NOVORA WORLD</p>
 </footer>
 
 <script>
-function showJoin(){
-alert("Welcome to NOVORA WORLD! User registration is coming soon.");
-}
-function publishPost(){
-const name=document.getElementById("username").value.trim();
-const message=document.getElementById("postText").value.trim();
-if(!name||!message){
-alert("Please enter your name and idea.");
-return;
-}
-const post=document.createElement("div");
-post.className="post";
-const title=document.createElement("small");
+function postIdea(){
+let name=document.getElementById('username').value.trim();
+let msg=document.getElementById('message').value.trim();
+if(!name||!msg){alert('Enter your name and idea');return}
+let card=document.createElement('div');
+card.className='phone-card';
+let title=document.createElement('b');
 title.textContent=name;
-const content=document.createElement("p");
-content.textContent=message;
-post.append(title,content);
-document.getElementById("posts").prepend(post);
-document.getElementById("postText").value="";
+let content=document.createElement('p');
+content.textContent=msg;
+card.append(title,content);
+document.getElementById('posts').prepend(card);
+document.getElementById('message').value='';
 }
 </script>
 </body>
 </html>
+
